@@ -23,7 +23,7 @@ class DetailCollectionViewCell: UICollectionViewCell {
         itemImageView.contentMode = .scaleAspectFit
       
         if let id = items.id {
-            itemNameLabel.text = "product ID: \(id)"
+            itemNameLabel.text = "ID: \(id)"
         }
         else{
             itemNameLabel.text = ""
