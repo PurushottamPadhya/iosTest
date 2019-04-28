@@ -34,6 +34,7 @@ class SearchViewController: UIViewController {
         
         searchTableView.delegate = self
         searchTableView.dataSource = self
+        searchTableView.separatorColor = .clear
         setupSearchController()
 
     }

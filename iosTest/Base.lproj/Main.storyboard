@@ -123,13 +123,25 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6W9-Zh-bWe">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blX-Ar-K8m">
+                                                <rect key="frame" x="20" y="100" width="335" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="xn8-T6-dgc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="6W9-Zh-bWe" secondAttribute="trailing" id="E9e-K6-Sz6"/>
                                             <constraint firstItem="6W9-Zh-bWe" firstAttribute="top" secondItem="ZMF-CM-6wK" secondAttribute="top" id="GpN-xa-Zm9"/>
+                                            <constraint firstItem="blX-Ar-K8m" firstAttribute="leading" secondItem="ZMF-CM-6wK" secondAttribute="leading" constant="20" id="SXd-QX-VmG"/>
                                             <constraint firstAttribute="bottom" secondItem="6W9-Zh-bWe" secondAttribute="bottom" id="YVA-UR-WaB"/>
+                                            <constraint firstItem="blX-Ar-K8m" firstAttribute="centerY" secondItem="ZMF-CM-6wK" secondAttribute="centerY" id="bgN-93-Vii"/>
                                             <constraint firstAttribute="height" constant="250" id="ffd-YR-K9Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="blX-Ar-K8m" secondAttribute="trailing" constant="20" id="sRq-1z-8Li"/>
                                             <constraint firstItem="6W9-Zh-bWe" firstAttribute="leading" secondItem="ZMF-CM-6wK" secondAttribute="leading" id="vTU-aD-8OY"/>
                                         </constraints>
                                     </view>
@@ -158,7 +170,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="bmN-dh-1Rz"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -207,6 +219,7 @@
                         <outlet property="containerView" destination="ZMF-CM-6wK" id="aJv-qM-qyh"/>
                         <outlet property="detailCollectionView" destination="WSS-q7-ySk" id="laQ-Ke-zCf"/>
                         <outlet property="displayImageView" destination="6W9-Zh-bWe" id="T1b-Kc-55c"/>
+                        <outlet property="messageLabel" destination="blX-Ar-K8m" id="ZAm-sW-IsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yb7-D3-3mU" userLabel="First Responder" sceneMemberID="firstResponder"/>

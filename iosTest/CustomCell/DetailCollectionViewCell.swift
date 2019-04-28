@@ -21,6 +21,12 @@ class DetailCollectionViewCell: UICollectionViewCell {
             itemImageView.image = UIImage(named: "placeholder")
         }
         itemImageView.contentMode = .scaleAspectFit
-        itemNameLabel.text = items.id ?? ""
+      
+        if let id = items.id {
+            itemNameLabel.text = "product ID: \(id)"
+        }
+        else{
+            itemNameLabel.text = ""
+        }
     }
 }

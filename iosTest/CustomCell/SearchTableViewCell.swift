@@ -31,6 +31,11 @@ class SearchTableViewCell: UITableViewCell {
         }
         searchImageView.contentMode = .scaleAspectFit
         
-        searchNameLabel.text = items.id ?? ""
+        if let id = items.id {
+            searchNameLabel.text = "product ID: \(id)"
+        }
+        else{
+           searchNameLabel.text = ""
+        }
     }
 }

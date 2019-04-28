@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var displayImageView: UIImageView!
     
     @IBOutlet weak var detailCollectionView: UICollectionView!
@@ -31,6 +32,8 @@ class DetailViewController: UIViewController {
             detailCollectionView.reloadData()
         }
         
+        messageLabel.text = "Video content is comming Soon.."
+        messageLabel.textColor = .red
     }
 
 
@@ -38,10 +41,13 @@ class DetailViewController: UIViewController {
     func setupSelectedItem(items:ImageVideosDetailModel ){
         if items.isVideo{
             displayImageView.isHidden = true
+            messageLabel.isHidden = false
             self.setupNavigatonBarTitle(title: "Video")
-            
+            print("This is a video")
         }
         else{
+            print("This is an image")
+            messageLabel.isHidden = true
             self.setupNavigatonBarTitle(title: "Image")
             displayImageView.isHidden = false
             if let url = items.url{
@@ -66,7 +72,7 @@ class DetailViewController: UIViewController {
     }
     */
     func setupNavigatonBarTitle(title: String){
-        self.navigationController?.title = title
+        self.title = title
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedStringKey.foregroundColor: UIColor.red]
     }
 

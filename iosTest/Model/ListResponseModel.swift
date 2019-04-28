@@ -71,10 +71,10 @@ class ImageVideosDetailModel: Mappable {
     }
     
 
-    var id: String?
+    var id: Int?
     var url: String?
-    var largeUrl: Double?
-    var sourceId: String?
+    var largeUrl: String?
+    var sourceId: Int?
     var isVideo = false
     
     required init?(map: Map) {

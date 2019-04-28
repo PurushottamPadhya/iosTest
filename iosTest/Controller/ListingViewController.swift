@@ -27,7 +27,7 @@ class ListingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        listTableView.separatorColor = .clear
         listTableView.delegate = self
         listTableView.dataSource = self
         self.getItemList(true)
@@ -74,7 +74,7 @@ class ListingViewController: UIViewController {
     */
     
     func setupNavigatonBar(){
-        self.navigationController?.title = "Image Videos Listing"
+        self.title = "Image Videos Listing"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "system", size: 18)!, NSAttributedStringKey.foregroundColor: UIColor.red]
 
         

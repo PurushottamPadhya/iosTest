@@ -124,7 +124,7 @@ public class APIManager{
             
             view.isUserInteractionEnabled = false
             loadingView.layer.zPosition = 100
-            loadingView.set(withLoadingView: view, withBackgroundColor: .white, withLoadingIndicatorColor: .gray)
+            loadingView.set(withLoadingView: view, withBackgroundColor: .white, withLoadingIndicatorColor: .red)
                     view.addSubview(loadingView)
         }
         
