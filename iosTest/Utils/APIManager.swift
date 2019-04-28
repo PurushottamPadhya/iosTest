@@ -280,7 +280,7 @@ class LoadingView: UIView{
         
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        let indicatorColor : UIColor = .white//actColor == .white ? .black : .white
+        let indicatorColor : UIColor = .red//actColor == .white ? .black : .white
         
         activityIndicator.color = indicatorColor
         

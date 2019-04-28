@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
             detailCollectionView.reloadData()
         }
         
-        messageLabel.text = "Video content is comming Soon.."
+        messageLabel.text = "Video content ... comming Soon.."
         messageLabel.textColor = .red
     }
 
