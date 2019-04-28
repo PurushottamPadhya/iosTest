@@ -3,18 +3,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 target 'iosTest' do
-    pod 'Alamofire'
+    pod 'Alamofire', '~> 4.7.0'
     pod 'SDWebImage'
-  # Pods for iosTest
-
-  target 'iosTestTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'iosTestUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+    pod 'ReachabilitySwift'
+    pod 'AlamofireObjectMapper'
+    pod 'ObjectMapper'
 end
